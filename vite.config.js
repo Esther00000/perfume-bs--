@@ -1,7 +1,5 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
-import { fileURLToPath } from "url";
-import { glob } from "glob";
 
 export default defineConfig({
   base: "/perfume-bs-Layout/",
