@@ -2,7 +2,8 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
-  base: "/perfume-bs-Layout/src/",
+  root: resolve(__dirname, "src"),
+  base: "/perfume-bs-Layout/",
   build: {
     rollupOptions: {
       input: {
