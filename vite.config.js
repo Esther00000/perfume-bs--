@@ -4,22 +4,19 @@ import { fileURLToPath } from "url";
 import { glob } from "glob";
 
 export default defineConfig({
-  root: resolve(__dirname, "src"),
   base: "/perfume-bs-Layout/",
   build: {
-    outDir: resolve(__dirname, "dist"),
     rollupOptions: {
-      input: Object.fromEntries(
-        glob
-          .sync("*.html")
-          .map(
-            (file) => [file.replace(/\.html$/, "")],
-            fileURLToPath(new URL(file, import.meta.url))
-          )
-      ),
+      input: {
+        main: resolve(__dirname, "src/index.html"),
+        product: resolve(__dirname, "src/product.html"),
+        login: resolve(__dirname, "src/login.html"),
+        detail: resolve(__dirname, "src/detail.html"),
+      },
     },
+    outDir: "dist",
   },
   server: {
-    open: "/",
+    open: "src/index.html",
   },
 });
