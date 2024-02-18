@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar pb-0 py-lg-8">
+        <div class="container">
+          <!-- navbar logo -->
+          <a class="navbar-brand" href="./index.html">
+            <img src="./images/d’Perfume.png" class="img-fluid" alt="logo" />
+          </a>
+          <!-- navbar btns -->
+          <div class="buttons d-lg-none">
+            <button
+              class="text-gray-text border-0 bg-transparent position-relative"
+            >
+              <span
+                class="material-symbols-outlined navbar-toggler-menu align-middle"
+                >shopping_cart</span
+              >
+              <span
+                class="position-absolute badge rounded-pill bg-warning top-0 start-100 translate-middle"
+                >3</span
+              >
+            </button>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+            >
+              <span
+                class="material-symbols-outlined navbar-toggler-menu align-middle"
+              >
+                menu
+              </span>
+            </button>
+          </div>
+          <!-- lg navbar list -->
+          <div class="d-none d-lg-block">
+            <ul class="navbar-nav ms-auto flex-row gap-16 align-items-center">
+              <li class="nav-item navbar-hover-line">
+                <a class="nav-link" href="./product.html"
+                  ><span class="material-symbols-outlined align-middle me-4">
+                    store </span
+                  >Product</a
+                >
+              </li>
+              <li class="nav-item navbar-hover-line">
+                <a class="nav-link"
+                  ><span class="material-symbols-outlined align-middle me-4">
+                    person </span
+                  >log in</a
+                >
+              </li>
+              <li class="nav-item navbar-hover-line">
+                <a class="nav-link" href="#"
+                  ><span class="material-symbols-outlined align-middle me-4">
+                    favorite </span
+                  >Wishlist</a
+                >
+              </li>
+              <li class="nav-item navbar-hover-line">
+                <a class="nav-link"
+                  ><span class="material-symbols-outlined align-middle me-4">
+                    shopping_cart </span
+                  >Cart(3)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- sm/md navbar list -->
+        <div class="collapse flex-grow-1 d-lg-none" id="navbarContent">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center collapse-menu"
+          >
+            <li class="nav-item border-bottom border-white">
+              <a class="nav-link" href="./product.html">Product</a>
+            </li>
+            <li class="nav-item border-bottom border-white">
+              <a class="nav-link" href="#">Wishlist</a>
+            </li>
+            <li class="nav-item border-bottom border-white">
+              <a class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item border-bottom border-white">
+              <a class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">log in</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <img src="./images/login1.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-4">
+            <h2 class="fs-32 fw-bold mb-12">Log in</h2>
+            <form class="needs-validation" novalidate>
+              <!-- 表單 -->
+              <div class="mb-20">
+                <label for="emailvalidation" class="form-label">帳號</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailvalidation"
+                  placeholder="email@example.com"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="mb-20">
+                <label for="validationCustom02" class="form-label">密碼</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="passwordvalidation"
+                  placeholder="請輸入密碼"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <!-- 按鈕 -->
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="link-primary fw-m">忘記密碼</a>
+                <div>
+                  <button class="btn btn-outline-primary me-8" type="button">
+                    註冊
+                  </button>
+                  <button class="btn btn-primary" type="submit">登入</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!-- footer-bottom -->
+      <div class="footer-bottom bg-dark-brown py-20">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <div
+              class="d-flex align-items-center justify-content-between gap-8 flex-grow-1 flex-lg-grow-0"
+            >
+              <img
+                src="./images/d’Perfumewhite.png"
+                alt="logo"
+                class="img-fluid"
+              />
+              <small class="text-white fw-m ms-8 text-nowrap"
+                >© 僅供練習非商業用途</small
+              >
+            </div>
+            <ul
+              class="align-items-center justify-content-between gap-36 d-none d-lg-flex text-white"
+            >
+              <li class="nav-item navbar-dark-hover-line">
+                <a class="nav-link" href="./product.html">Product</a>
+              </li>
+              <li class="nav-item navbar-dark-hover-line">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item navbar-dark-hover-line">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

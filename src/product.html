@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <title>product</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar pb-0 py-lg-8">
+        <div class="container">
+          <!-- navbar logo -->
+          <a class="navbar-brand" href="./index.html">
+            <img src="./images/d’Perfume.png" class="img-fluid" alt="logo" />
+          </a>
+          <!-- navbar btns -->
+          <div class="buttons d-lg-none">
+            <button
+              class="text-gray-text border-0 bg-transparent position-relative"
+            >
+              <span
+                class="material-symbols-outlined navbar-toggler-menu align-middle"
+                >shopping_cart</span
+              >
+              <span
+                class="position-absolute badge rounded-pill bg-warning top-0 start-100 translate-middle"
+                >3</span
+              >
+            </button>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+            >
+              <span
+                class="material-symbols-outlined navbar-toggler-menu align-middle"
+              >
+                menu
+              </span>
+            </button>
+          </div>
+          <!-- lg navbar list -->
+          <div class="d-none d-lg-block">
+            <ul class="navbar-nav ms-auto flex-row gap-16 align-items-center">
+              <li class="nav-item navbar-hover-line">
+                <a class="nav-link" href="./product.html"
+                  ><span class="material-symbols-outlined align-middle me-4">
+                    store </span
+                  >Product</a
+                >
+              </li>
+              <li class="nav-item navbar-hover-line">
+                <a class="nav-link"
+                  ><span class="material-symbols-outlined align-middle me-4">
+                    person </span
+                  >log in</a
+                >
+              </li>
+              <li class="nav-item navbar-hover-line">
+                <a class="nav-link" href="#"
+                  ><span class="material-symbols-outlined align-middle me-4">
+                    favorite </span
+                  >Wishlist</a
+                >
+              </li>
+              <li class="nav-item navbar-hover-line">
+                <a class="nav-link"
+                  ><span class="material-symbols-outlined align-middle me-4">
+                    shopping_cart </span
+                  >Cart(3)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- sm/md navbar list -->
+        <div class="collapse flex-grow-1 d-lg-none" id="navbarContent">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center collapse-menu"
+          >
+            <li class="nav-item border-bottom border-white">
+              <a class="nav-link" href="./product.html">Product</a>
+            </li>
+            <li class="nav-item border-bottom border-white">
+              <a class="nav-link" href="#">Wishlist</a>
+            </li>
+            <li class="nav-item border-bottom border-white">
+              <a class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item border-bottom border-white">
+              <a class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">log in</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="py-0">
+      <!-- 分頁按鈕 -->
+      <div class="bg-dark-brown navbar-expand-md py-8 py-md-16">
+        <div class="container">
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#pills-tab"
+          >
+            <span class="material-symbols-outlined text-white"> menu </span>
+          </button>
+          <ul
+            class="nav collapse navbar-collapse"
+            id="pills-tab"
+            role="tablist"
+          >
+            <!-- CHANEL -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link link-light fs-20 navbar-dark-hover-line active"
+                id="pills-CHANEL-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-CHANEL"
+                type="button"
+                role="tab"
+              >
+                CHANEL
+              </button>
+            </li>
+            <!-- Jo Malone -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link link-light navbar-dark-hover-line fs-20"
+                id="pills-JoMalone-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-JoMalone"
+                type="button"
+                role="tab"
+              >
+                Jo Malone
+              </button>
+            </li>
+            <!-- Curology -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link link-light navbar-dark-hover-line fs-20"
+                id="pills-Curology-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-Curology"
+                type="button"
+                role="tab"
+              >
+                Curology
+              </button>
+            </li>
+            <!-- Dior -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link link-light navbar-dark-hover-line fs-20"
+                id="pills-Dior-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-Dior"
+                type="button"
+                role="tab"
+              >
+                Dior
+              </button>
+            </li>
+            <!-- Chloe -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link link-light navbar-dark-hover-line fs-20"
+                id="pills-Chloe-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-Chloe"
+                type="button"
+                role="tab"
+              >
+                Chloe
+              </button>
+            </li>
+            <!-- ZARA -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link link-light navbar-dark-hover-line fs-20"
+                id="pills-ZARA-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-ZARA"
+                type="button"
+                role="tab"
+              >
+                ZARA
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container py-40 py-md-60">
+        <!-- 分頁頁面 -->
+        <div class="tab-content" id="pills-tabContent">
+          <!-- CHANEL -->
+          <div
+            class="tab-pane fade show active"
+            id="pills-CHANEL"
+            role="tabpanel"
+          >
+            <!-- CHANEL 商品內容 -->
+            <div class="container mb-40 mb-md-60">
+              <h3 class="product-title mb-16">CHANEL</h3>
+              <div
+                class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gy-30 gx-16 gy-lg-56 gx-lg-30"
+              >
+                <div class="col">
+                  <div class="product-card">
+                    <a
+                      href="./detail.html"
+                      class="product-image"
+                      style="background-image: url('./images/products1.jpg')"
+                    ></a>
+                    <div class="product-text">
+                      <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                      <p class="fw-light">Jo Malone</p>
+                      <p class="fw-light">
+                        NT$1,380
+                        <span class="text-delete-line text-gray-text ms-8"
+                          >NT$1,580</span
+                        >
+                      </p>
+                      <div class="buttons">
+                        <span class="material-symbols-outlined text-primary">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined text-primary">
+                          shopping_cart
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product-card">
+                    <div
+                      class="product-image"
+                      style="background-image: url('./images/index6.jpg')"
+                    ></div>
+                    <div class="product-text">
+                      <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                      <p class="fw-light">Jo Malone</p>
+                      <p class="fw-light">
+                        NT$1,380
+                        <span class="text-delete-line text-gray-text ms-8"
+                          >NT$1,580</span
+                        >
+                      </p>
+                      <div class="buttons">
+                        <span class="material-symbols-outlined text-primary">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined text-primary">
+                          shopping_cart
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product-card">
+                    <div
+                      class="product-image"
+                      style="background-image: url('./images/products3.jpg')"
+                    ></div>
+                    <div class="product-text">
+                      <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                      <p class="fw-light">Jo Malone</p>
+                      <p class="fw-light">NT$1,380</p>
+                      <div class="buttons">
+                        <span class="material-symbols-outlined text-primary">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined text-primary">
+                          shopping_cart
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product-card">
+                    <div
+                      class="product-image"
+                      style="background-image: url('./images/products4.jpg')"
+                    ></div>
+                    <div class="product-text">
+                      <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                      <p class="fw-light">Jo Malone</p>
+                      <p class="fw-light">NT$1,380</p>
+                      <div class="buttons">
+                        <span class="material-symbols-outlined text-primary">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined text-primary">
+                          shopping_cart
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product-card">
+                    <div
+                      class="product-image"
+                      style="background-image: url('./images/products5.jpg')"
+                    ></div>
+                    <div class="product-text">
+                      <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                      <p class="fw-light">Jo Malone</p>
+                      <p class="fw-light">NT$1,380</p>
+                      <div class="buttons">
+                        <span class="material-symbols-outlined text-primary">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined text-primary">
+                          shopping_cart
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product-card">
+                    <div
+                      class="product-image"
+                      style="background-image: url('./images/index4.jpg')"
+                    ></div>
+                    <div class="product-text">
+                      <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                      <p class="fw-light">Jo Malone</p>
+                      <p class="fw-light">NT$1,380</p>
+                      <div class="buttons">
+                        <span class="material-symbols-outlined text-primary">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined text-primary">
+                          shopping_cart
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product-card">
+                    <div
+                      class="product-image"
+                      style="background-image: url('./images/products7.jpg')"
+                    ></div>
+                    <div class="product-text">
+                      <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                      <p class="fw-light">Jo Malone</p>
+                      <p class="fw-light">NT$1,380</p>
+                      <div class="buttons">
+                        <span class="material-symbols-outlined text-primary">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined text-primary">
+                          shopping_cart
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product-card">
+                    <div
+                      class="product-image"
+                      style="background-image: url('./images/products8.jpg')"
+                    ></div>
+                    <div class="product-text">
+                      <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                      <p class="fw-light">Jo Malone</p>
+                      <p class="fw-light">NT$1,380</p>
+                      <div class="buttons">
+                        <span class="material-symbols-outlined text-primary">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined text-primary">
+                          shopping_cart
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product-card">
+                    <div
+                      class="product-image"
+                      style="background-image: url('./images/index3.png')"
+                    ></div>
+                    <div class="product-text">
+                      <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                      <p class="fw-light">Jo Malone</p>
+                      <p class="fw-light">NT$1,380</p>
+                      <div class="buttons">
+                        <span class="material-symbols-outlined text-primary">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined text-primary">
+                          shopping_cart
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product-card">
+                    <div
+                      class="product-image"
+                      style="background-image: url('./images/products10.jpg')"
+                    ></div>
+                    <div class="product-text">
+                      <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                      <p class="fw-light">Jo Malone</p>
+                      <p class="fw-light">NT$1,380</p>
+                      <div class="buttons">
+                        <span class="material-symbols-outlined text-primary">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined text-primary">
+                          shopping_cart
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product-card">
+                    <div
+                      class="product-image"
+                      style="background-image: url('./images/products11.jpg')"
+                    ></div>
+                    <div class="product-text">
+                      <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                      <p class="fw-light">Jo Malone</p>
+                      <p class="fw-light">NT$1,380</p>
+                      <div class="buttons">
+                        <span class="material-symbols-outlined text-primary">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined text-primary">
+                          shopping_cart
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product-card">
+                    <div
+                      class="product-image"
+                      style="background-image: url('./images/products12.jpg')"
+                    ></div>
+                    <div class="product-text">
+                      <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                      <p class="fw-light">Jo Malone</p>
+                      <p class="fw-light">NT$1,380</p>
+                      <div class="buttons">
+                        <span class="material-symbols-outlined text-primary">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined text-primary">
+                          shopping_cart
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="Page navigation ">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Jo Malone -->
+          <div class="tab-pane fade" id="pills-JoMalone" role="tabpanel">
+            <!-- Jo Malone 商品內容 -->
+            <h3 class="product-title mb-16">Jo Malone</h3>
+            <div
+              class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gy-30 gx-16 gy-lg-56 gx-lg-30"
+            >
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products1.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">
+                      NT$1,380
+                      <span class="text-delete-line text-gray-text ms-8"
+                        >NT$1,580</span
+                      >
+                    </p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index6.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">
+                      NT$1,380
+                      <span class="text-delete-line text-gray-text ms-8"
+                        >NT$1,580</span
+                      >
+                    </p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products3.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products4.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products5.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index4.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products7.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products8.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index3.png')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products10.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products11.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products12.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Curology -->
+          <div class="tab-pane fade" id="pills-Curology" role="tabpanel">
+            <!-- Curology 商品內容 -->
+            <h3 class="product-title mb-16">Curology</h3>
+            <div
+              class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gy-30 gx-16 gy-lg-56 gx-lg-30"
+            >
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products1.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">
+                      NT$1,380
+                      <span class="text-delete-line text-gray-text ms-8"
+                        >NT$1,580</span
+                      >
+                    </p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index6.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">
+                      NT$1,380
+                      <span class="text-delete-line text-gray-text ms-8"
+                        >NT$1,580</span
+                      >
+                    </p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products3.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products4.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products5.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index4.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products7.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products8.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index3.png')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products10.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products11.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products12.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dior -->
+          <div class="tab-pane fade" id="pills-Dior" role="tabpanel">
+            <!-- Dior 商品內容 -->
+            <h3 class="product-title mb-16">Dior</h3>
+            <div
+              class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gy-30 gx-16 gy-lg-56 gx-lg-30"
+            >
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products1.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">
+                      NT$1,380
+                      <span class="text-delete-line text-gray-text ms-8"
+                        >NT$1,580</span
+                      >
+                    </p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index6.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">
+                      NT$1,380
+                      <span class="text-delete-line text-gray-text ms-8"
+                        >NT$1,580</span
+                      >
+                    </p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products3.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products4.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products5.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index4.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products7.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products8.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index3.png')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products10.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products11.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products12.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Chloe -->
+          <div class="tab-pane fade" id="pills-Chloe" role="tabpanel">
+            <!-- Chloe 商品內容 -->
+            <h3 class="product-title mb-16">Chloe</h3>
+            <div
+              class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gy-30 gx-16 gy-lg-56 gx-lg-30"
+            >
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products1.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">
+                      NT$1,380
+                      <span class="text-delete-line text-gray-text ms-8"
+                        >NT$1,580</span
+                      >
+                    </p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index6.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">
+                      NT$1,380
+                      <span class="text-delete-line text-gray-text ms-8"
+                        >NT$1,580</span
+                      >
+                    </p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products3.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products4.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products5.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index4.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products7.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products8.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index3.png')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products10.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products11.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products12.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ZARA -->
+          <div class="tab-pane fade" id="pills-ZARA" role="tabpanel">
+            <!-- ZARA 商品內容 -->
+            <h3 class="product-title mb-16">ZARA</h3>
+            <div
+              class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gy-30 gx-16 gy-lg-56 gx-lg-30"
+            >
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products1.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">
+                      NT$1,380
+                      <span class="text-delete-line text-gray-text ms-8"
+                        >NT$1,580</span
+                      >
+                    </p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index6.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">
+                      NT$1,380
+                      <span class="text-delete-line text-gray-text ms-8"
+                        >NT$1,580</span
+                      >
+                    </p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products3.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products4.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products5.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index4.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products7.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products8.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/index3.png')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products10.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products11.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-card">
+                  <div
+                    class="product-image"
+                    style="background-image: url('./images/products12.jpg')"
+                  ></div>
+                  <div class="product-text">
+                    <h5 class="fs-24 fw-semibold">Poppy & Barley</h5>
+                    <p class="fw-light">Jo Malone</p>
+                    <p class="fw-light">NT$1,380</p>
+                    <div class="buttons">
+                      <span class="material-symbols-outlined text-primary">
+                        favorite
+                      </span>
+                      <span class="material-symbols-outlined text-primary">
+                        shopping_cart
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!-- footer-top -->
+      <div
+        class="footer-top"
+        style="
+          height: 600px;
+          background-image: url('./images/index10.jpg');
+          background-position: 0% 50%;
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="container h-100">
+          <div class="row h-100 align-items-end">
+            <div class="col-md-6 col-xl-4 mb-112">
+              <h2 class="fw-semibold text-gray-text fs-32">
+                記得 <br />
+                訂閱以獲取更多資訊！
+              </h2>
+              <div class="input-group mt-20">
+                <input
+                  type="email"
+                  class="form-control border border-dark-brown border-2 py-20"
+                  placeholder="Your email address"
+                />
+                <span
+                  class="input-group-text bg-dark-brown text-white border border-dark-brown border-2 py-20 px-24"
+                  >Subscribe</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer-bottom -->
+      <div class="footer-bottom bg-dark-brown py-20">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <div
+              class="d-flex align-items-center justify-content-between gap-8 flex-grow-1 flex-lg-grow-0"
+            >
+              <img
+                src="./images/d’Perfumewhite.png"
+                alt="logo"
+                class="img-fluid"
+              />
+              <small class="text-white fw-m ms-8 text-nowrap"
+                >© 僅供練習非商業用途</small
+              >
+            </div>
+            <ul
+              class="align-items-center justify-content-between gap-36 d-none d-lg-flex text-white"
+            >
+              <li class="nav-item navbar-dark-hover-line">
+                <a class="nav-link" href="./product.html">Product</a>
+              </li>
+              <li class="nav-item navbar-dark-hover-line">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item navbar-dark-hover-line">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <title>detail</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar pb-0 py-lg-8">
+        <div class="container">
+          <!-- navbar logo -->
+          <a class="navbar-brand" href="./index.html">
+            <img src="./images/d’Perfume.png" class="img-fluid" alt="logo" />
+          </a>
+          <!-- navbar btns -->
+          <div class="buttons d-lg-none">
+            <button
+              class="text-gray-text border-0 bg-transparent position-relative"
+            >
+              <span
+                class="material-symbols-outlined navbar-toggler-menu align-middle"
+                >shopping_cart</span
+              >
+              <span
+                class="position-absolute badge rounded-pill bg-warning top-0 start-100 translate-middle"
+                >3</span
+              >
+            </button>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+            >
+              <span
+                class="material-symbols-outlined navbar-toggler-menu align-middle"
+              >
+                menu
+              </span>
+            </button>
+          </div>
+          <!-- lg navbar list -->
+          <div class="d-none d-lg-block">
+            <ul class="navbar-nav ms-auto flex-row gap-16 align-items-center">
+              <li class="nav-item navbar-hover-line">
+                <a class="nav-link" href="./product.html"
+                  ><span class="material-symbols-outlined align-middle me-4">
+                    store </span
+                  >Product</a
+                >
+              </li>
+              <li class="nav-item navbar-hover-line">
+                <a class="nav-link"
+                  ><span class="material-symbols-outlined align-middle me-4">
+                    person </span
+                  >log in</a
+                >
+              </li>
+              <li class="nav-item navbar-hover-line">
+                <a class="nav-link" href="#"
+                  ><span class="material-symbols-outlined align-middle me-4">
+                    favorite </span
+                  >Wishlist</a
+                >
+              </li>
+              <li class="nav-item navbar-hover-line">
+                <a class="nav-link"
+                  ><span class="material-symbols-outlined align-middle me-4">
+                    shopping_cart </span
+                  >Cart(3)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- sm/md navbar list -->
+        <div class="collapse flex-grow-1 d-lg-none" id="navbarContent">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center collapse-menu"
+          >
+            <li class="nav-item border-bottom border-white">
+              <a class="nav-link" href="./product.html">Product</a>
+            </li>
+            <li class="nav-item border-bottom border-white">
+              <a class="nav-link" href="#">Wishlist</a>
+            </li>
+            <li class="nav-item border-bottom border-white">
+              <a class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item border-bottom border-white">
+              <a class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">log in</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="pt-20">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div
+              class="detail-image"
+              style="background-image: url('./images/product1.jpg')"
+            ></div>
+            <div class="d-none d-md-flex row g-30 mt-30">
+              <div class="col-6">
+                <img src="./images/product2.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="col-6">
+                <img src="./images/product3.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="col-12">
+                <img src="./images/product1.jpg" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="detail-text">
+              <div class="detail-text-top mb-40 mb-md-60 mb-xl-80">
+                <h3 class="fs-32 fw-bold">CHANEL N°5</h3>
+                <p class="fw-light mb-32">
+                  N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。
+                </p>
+                <p class="fw-light mb-12">NT$4,980</p>
+                <div class="buy-button">
+                  <div class="input-group">
+                    <input
+                      type="number"
+                      class="form-control col-6"
+                      min="1"
+                      max="10"
+                      value="1"
+                    />
+                    <button
+                      class="btn btn-primary col-6"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#boughtModal"
+                    >
+                      加入購物車
+                    </button>
+                  </div>
+                  <button
+                    type="button"
+                    class="bg-transparent border-0 mt-8"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addedToFavoritesModal"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary align-middle"
+                    >
+                      favorite
+                    </span>
+                    加入我的收藏
+                  </button>
+                </div>
+              </div>
+              <div class="detail-text-bottom">
+                <ul>
+                  <li class="mb-20">
+                    <h6 class="fw-m mb-8">商品購買須知</h6>
+                    <p class="fw-light">
+                      產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。
+                      商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。
+                      D’Perfume
+                      盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。
+                    </p>
+                  </li>
+                  <li>
+                    <h6 class="fw-m mb-8">退換貨須知</h6>
+                    <p class="fw-light">
+                      依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row d-md-none row-cols-1 g-30 mt-30">
+              <div class="col">
+                <img src="./images/product2.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="col">
+                <img src="./images/product3.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="col">
+                <img src="./images/product1.jpg" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!-- footer-bottom -->
+      <div class="footer-bottom bg-dark-brown py-20">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <div
+              class="d-flex align-items-center justify-content-between gap-8 flex-grow-1 flex-lg-grow-0"
+            >
+              <img
+                src="./images/d’Perfumewhite.png"
+                alt="logo"
+                class="img-fluid"
+              />
+              <small class="text-white fw-m ms-8 text-nowrap"
+                >© 僅供練習非商業用途</small
+              >
+            </div>
+            <ul
+              class="align-items-center justify-content-between gap-36 d-none d-lg-flex text-white"
+            >
+              <li class="nav-item navbar-dark-hover-line">
+                <a class="nav-link" href="./product.html">Product</a>
+              </li>
+              <li class="nav-item navbar-dark-hover-line">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item navbar-dark-hover-line">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- modal 已加入購物車 -->
+    <div class="modal" tabindex="-1" id="boughtModal">
+      <div class="modal-dialog modal-dialog-centered justify-content-center">
+        <div class="modal-content w-auto w-md-100 flex-md-grow-1">
+          <div class="modal-body text-center">
+            <p class="text-primary fw-semibold">已加入購物車</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal 已加入收藏 -->
+    <div class="modal" tabindex="-1" id="addedToFavoritesModal">
+      <div class="modal-dialog modal-dialog-centered justify-content-center">
+        <div class="modal-content w-auto w-md-100 flex-md-grow-1">
+          <div class="modal-body text-center">
+            <p class="text-primary fw-semibold">已加入收藏</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
