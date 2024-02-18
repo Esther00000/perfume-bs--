@@ -2,7 +2,7 @@
   "name": "perfume",
   "version": "1.0.0",
   "main": "main.js",
-  "homepage": "https://github.com/Esther00000/perfume-bs-Layout.git/src/index.html",
+  "homepage": "https://github.com/Esther00000/perfume-bs-Layout.git/src/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
