@@ -3,7 +3,7 @@ import { resolve } from "path";
 
 export default defineConfig({
   root: resolve(__dirname, "src"),
-  base: "/test/", // 修改成您的專案名稱，如果您的專案是部署到根目錄則設置為 '/Repository/'
+  base: "/perfume-bs-Layout/", // 修改成您的專案名稱，如果您的專案是部署到根目錄則設置為 '/Repository/'
   build: {
     outDir: resolve(__dirname, "dist"),
   },
