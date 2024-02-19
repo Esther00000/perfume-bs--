@@ -15,6 +15,6 @@ export default defineConfig({
     outDir: "dist",
   },
   server: {
-    open: "src/index.html",
+    open: "/",
   },
 });
